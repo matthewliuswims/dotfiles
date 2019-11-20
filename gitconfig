@@ -1,0 +1,9 @@
+# [user] and [filter "lfs"] were redacted
+
+################ everything below is for git aliasing ################\
+[alias]
+        co = checkout
+        br = branch
+        ci = commit
+        st = status
+        rb = rebase
