@@ -1,4 +1,4 @@
-" Plugins will be downloaded under the specified directory.
+" Plugins will be downloaded under the specified directory. see https://github.com/junegunn/vim-plug
 call plug#begin('~/.vim/plugged')
 
 " Declare the list of plugins.
