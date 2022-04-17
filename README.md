@@ -1,1 +1,2 @@
 - after adding the new `.vimrc` file you'll need to run `vim` and run `:PlugInstall` to install the `crusoexia/vim-monokai` plugin listed in that file.
+- for `gitconfig` add it to to the gitconfig file via `vim ~/.gitconfig`
