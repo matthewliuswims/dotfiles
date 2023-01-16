@@ -1,0 +1,7 @@
+This is a text file, because I didn't want to create a script file as perhaps only certain commands need to be used. Eventually, this could be more robust.
+To use this, just copy the command you want to use and slap it into your terminal.
+
+# to allow sublime to open any file from the CLI (this uses symlinking)
+# from https://stackoverflow.com/questions/16199581/open-sublime-text-from-terminal-in-macos
+# this requires sublime to be in the applications folder
+sudo ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/bin/subl
