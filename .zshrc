@@ -113,3 +113,20 @@ alias search=grep
 # provides alias to  git to allow a user to then store dot files to github
 # usage: so basically treat the below command as git.  
 alias git-alias-for-dot-files='/usr/bin/git --git-dir=$HOME/.dotfilesconfigmatthewcreated/ --work-tree=$HOME'
+
+# to use pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+# to use poetry
+export PATH="$HOME/.poetry/bin:$PATH"
+
+# to us nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# this allows you to open vscode using "code ."
+# make sure vscode is actually in the Applications folder
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+
