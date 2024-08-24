@@ -1,14 +1,19 @@
 # Readme
 ## Vim
+
 0. run `vim ~/.vimrc` and the dot file in this repo
 1. download Vim-Plug via https://github.com/junegunn/vim-plug?tab=readme-ov-file#installation
 2. Make sure to actually call :PlugInstall while in vim (just literally be in any vim command mode) to install the plugin!!!
 3. You should now be able to see a themed vim editor when you use vim
 
 ## zshrc
+
 0. install zsh https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH
 1. install oh-my-zsh via https://ohmyz.sh/#install
-2. restart editor, you should now see themed terminal
+2. restart editor, you should now see the icons and commands change color, but for some reason the background doens't change color as per [here](https://stackoverflow.com/q/14056007).
+3. In order to get the dark background, we'll have to change the themes of the actual terminal emulator. https://draculatheme.com/iterm is an example of a theme you can download. the instructions on the site are clear.
+4. You should clearly see oh-my-zsh show up, the dark dracula theme show up, and zsh should also be respected!
 
 ## Git
+
 - for `gitconfig` add it to to the gitconfig file via `vim ~/.gitconfig`
