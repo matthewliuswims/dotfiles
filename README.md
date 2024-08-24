@@ -1,5 +1,6 @@
-# Readme
-## Vim
+# README
+
+## vim
 
 0. run `vim ~/.vimrc` and the dot file in this repo
 1. download Vim-Plug via https://github.com/junegunn/vim-plug?tab=readme-ov-file#installation
@@ -14,6 +15,6 @@
 3. In order to get the dark background, we'll have to change the themes of the actual terminal emulator. You can go to `Settings > Profile > Colors > Color Presets` and choose `Dark Background`
 4. You should clearly see oh-my-zsh show up, the dark theme show up, and zsh should also be respected!
 
-## Git
+## git
 
 - for `gitconfig` add it to to the gitconfig file via `vim ~/.gitconfig`
