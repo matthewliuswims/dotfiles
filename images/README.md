@@ -1,1 +1,1 @@
-just some images to help you see what's going on :) 
+just some images to help you how to configure stuff
