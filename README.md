@@ -8,6 +8,7 @@
 ## zshrc
 0. install zsh https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH
 1. install oh-my-zsh via https://ohmyz.sh/#install
-2. 
+2. restart editor, you should now see themed terminal
+
 ## Git
 - for `gitconfig` add it to to the gitconfig file via `vim ~/.gitconfig`
