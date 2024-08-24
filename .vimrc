@@ -1,5 +1,6 @@
 " Plugins will be downloaded under the specified directory. see https://github.com/junegunn/vim-plug
-" Make sure to actually call :PlugInstall while in vim to install the plugin!!!
+" 1. download Vim-Plug via https://github.com/junegunn/vim-plug?tab=readme-ov-file#installation
+" 2. Make sure to actually call :PlugInstall while in vim (just literally be in any vim command mode) to install the plugin!!!
 
 call plug#begin('~/.vim/plugged')
 
