@@ -11,8 +11,8 @@
 0. install zsh https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH
 1. install oh-my-zsh via https://ohmyz.sh/#install
 2. restart editor, you should now see the icons and commands change color, but for some reason the background doens't change color as per [here](https://stackoverflow.com/q/14056007).
-3. In order to get the dark background, we'll have to change the themes of the actual terminal emulator. https://draculatheme.com/iterm is an example of a theme you can download. the instructions on the site are clear.
-4. You should clearly see oh-my-zsh show up, the dark dracula theme show up, and zsh should also be respected!
+3. In order to get the dark background, we'll have to change the themes of the actual terminal emulator. You can go to `Settings > Profile > Colors > Color Presets` and choose `Dark Background`
+4. You should clearly see oh-my-zsh show up, the dark theme show up, and zsh should also be respected!
 
 ## Git
 
