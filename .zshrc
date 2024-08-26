@@ -115,9 +115,9 @@ alias search=grep
 alias git-alias-for-dot-files='/usr/bin/git --git-dir=$HOME/.dotfilesconfigmatthewcreated/ --work-tree=$HOME'
 
 # to use pyenv
-echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
-echo '[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
-echo 'eval "$(pyenv init -)"' >> ~/.zshrc
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
 
 # to use poetry
 export PATH="$HOME/.poetry/bin:$PATH"
