@@ -1,4 +1,5 @@
 # [user] and [filter "lfs"] were redacted
+# save in ~/.gitconfig
 
 ################ everything below is for git aliasing ################\
 [alias]
