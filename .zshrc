@@ -131,3 +131,7 @@ export NVM_DIR="$HOME/.nvm"
 # make sure vscode is actually in the Applications folder
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
+# to add brew to path -- see https://stackoverflow.com/a/65603434
+export PATH=/opt/homebrew/bin:$PATH
+
+
