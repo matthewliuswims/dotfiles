@@ -1,12 +1,12 @@
 Difference Between Shell and Terminal:
 
-    Shell:
-        - A shell is a program that interprets and executes commands. Examples include bash, zsh, and fish.
-        - It provides an environment for running scripts, managing processes, and interacting with the operating system.
+Shell:
+    - A shell is a program that interprets and executes commands. Examples include bash, zsh, and fish.
+    - It provides an environment for running scripts, managing processes, and interacting with the operating system.
 
-    Terminal:
-        - A terminal is an interface or application that provides access to a shell. Examples include Terminal.app (Mac), GNOME Terminal (Linux), and PuTTY (Windows).
-        - It's essentially a window or emulator that allows you to communicate with the shell.
+Terminal:
+    - A terminal is an interface or application that provides access to a shell. Examples include Terminal.app (Mac), GNOME Terminal (Linux), and PuTTY (Windows).
+    - It's essentially a window or emulator that allows you to communicate with the shell.
 
 Analogy:
     - The terminal is the doorway.
@@ -15,7 +15,8 @@ Analogy:
 Note:
     - Modern terminals are often referred to as terminal emulators, as they replicate the functionality of older physical terminals that connected to mainframes.
 
-----
+------------------------------------------------------------
+PATH:
 
 TLDR: A PATH isn't a property of your computer - it's just a variable that each shell process maintains separately. Think of it like this:
 
