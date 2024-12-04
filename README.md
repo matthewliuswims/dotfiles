@@ -2,7 +2,7 @@
 
 ## vim
 
-0. run `vim ~/.vimrc` and the dot file in this repo
+0. run `vim ~/.vimrc` and add the dot file in this repo to that file
 1. download Vim-Plug via https://github.com/junegunn/vim-plug?tab=readme-ov-file#installation
 2. Make sure to actually call :PlugInstall while in vim (just literally be in any vim command mode) to install the plugin!!!
 3. You should now be able to see a themed vim editor when you use vim
