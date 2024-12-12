@@ -1,0 +1,7 @@
+is the user `settings.json` for vscode . should be able to copy + paste everything below
+##############
+
+{
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
