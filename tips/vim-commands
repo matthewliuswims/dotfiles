@@ -1,0 +1,5 @@
+`dd` to delete a line
+`j` to scroll down one line.
+`k` to scroll up one line
+`gg` to top of file
+`shiftg` to bottom of file (that's shift g)
