@@ -1,5 +1,7 @@
 # README
 
+Below commands are all for the new machine (unless specified otherwise). They are supposed to use the files in this repo.
+
 ## vim
 
 0. run `vim ~/.vimrc` and copy over the contents of the corresponding dot file in this repo to that file
@@ -20,5 +22,5 @@
 - for `gitconfig` add it to to the gitconfig file via `vim ~/.gitconfig`
 
 ## Brew
-- download `brew-packages.txt` to local. This file should be kept up-to-date by prev machine by using `brew list > brew-packages.txt`
-- `xargs brew install < brew-packages.txt` - reads the list of package names from brew-packages.txt and installs each one using brew install. 
+- `brew bundle dump` on old machine. Move the corresponding/generated `Brewfile` to this repo.
+-  on new machine run `brew bundle` while having the downloaded `Brewfile` in the same dir as where you're running the brew command. This command reads the Brewfile and installs everything listed.
