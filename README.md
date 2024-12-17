@@ -18,3 +18,7 @@
 ## git
 
 - for `gitconfig` add it to to the gitconfig file via `vim ~/.gitconfig`
+
+## Brew
+- download `brew-packages.txt` to local. This file should be kept up-to-date by prev machine by using `brew list > brew-packages.txt`
+- `xargs brew install < brew-packages.txt` - reads the list of package names from brew-packages.txt and installs each one using brew install. 
