@@ -134,4 +134,5 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 # to add brew to path -- see https://stackoverflow.com/a/65603434
 export PATH=/opt/homebrew/bin:$PATH
 
-
+# miniconda. First install with https://docs.anaconda.com/miniconda/install/ then needed to add below to have miniconda be part of path
+export PATH="$HOME/miniconda3/bin:$PATH"
