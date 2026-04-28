@@ -1,26 +1,56 @@
-# README
+# dotfiles
 
-Below commands are all for the new machine (unless specified otherwise). They are supposed to use the files in this repo.
+Fresh Mac setup. Run in order — later steps assume earlier ones succeeded.
 
-## vim
+## 1. Prereqs (install manually first)
 
-0. run `vim ~/.vimrc` and copy over the contents of the corresponding dot file in this repo to that file
-1. download Vim-Plug via https://github.com/junegunn/vim-plug?tab=readme-ov-file#installation
-2. Make sure to actually call :PlugInstall while in vim (just literally be in any vim command mode) to install the plugin!!!
-3. You should now be able to see a themed vim editor when you use vim
+- **Xcode CLI tools** — `xcode-select --install`
+- **Homebrew** — https://brew.sh
+- **VS Code** — install before step 2 so the VS Code extensions in the Brewfile actually land
 
-## zshrc
+## 2. Install everything in the Brewfile
 
-0. install zsh https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH AND....run `vim ~/.zshrc` and copy over the contents of corresponding dot file in this repo to that file
-1. install oh-my-zsh via https://ohmyz.sh/#install
-2. restart editor, you should now see the icons and commands change color, but for some reason the background doens't change color as per [here](https://stackoverflow.com/q/14056007).
-3. In order to get the dark background, we'll have to change the themes of the actual terminal emulator. You can go to `Settings > Profile > Colors > Color Presets` and choose `Dark Background`
-4. You should clearly see oh-my-zsh show up, the dark theme show up, and zsh should also be respected!
+```sh
+brew bundle --file=./Brewfile
+```
 
-## git
+Installs `pyenv`, `gh`, `git-lfs`, `awscli`, `1password-cli`, `docker-desktop`, the VS Code extensions, etc.
 
-- for `gitconfig` add it to to the gitconfig file via `vim ~/.gitconfig`
+## 3. Shell
 
-## Brew
-- `brew bundle dump` on old machine. Move the corresponding/generated `Brewfile` to this repo.
--  on new machine run `brew bundle` while having the downloaded `Brewfile` in the same dir as where you're running the brew command. This command reads the Brewfile and installs everything listed.
+1. Install **oh-my-zsh** — https://ohmyz.sh
+2. Copy `.zshrc` → `~/.zshrc`
+3. In Terminal: Settings → Profile → Colors → pick a dark preset (oh-my-zsh doesn't change the terminal background itself)
+
+## 4. Git
+
+1. Copy `gitconfig` → `~/.gitconfig`
+2. `git lfs install` (the gitconfig references LFS filters)
+
+## 5. Vim
+
+1. Copy `.vimrc` → `~/.vimrc`
+2. Install **Vim-Plug** — https://github.com/junegunn/vim-plug
+3. Open vim and run `:PlugInstall`
+
+## 6. VS Code
+
+```sh
+cp "settings.json (vscode)" "$HOME/Library/Application Support/Code/User/settings.json"
+cp "keybindings.json (vscode)" "$HOME/Library/Application Support/Code/User/keybindings.json"
+```
+
+## Optional / on demand
+
+- **nvm** — https://github.com/nvm-sh/nvm (`.zshrc` load lines are guarded, safe to skip)
+- **poetry** — `.zshrc` adds `~/.poetry/bin` to PATH; install if you use it
+- **miniconda** — https://docs.anaconda.com/miniconda/install/ then `conda init zsh`. Machine-specific, intentionally not in this repo.
+- **Claude Code** — required for the `cdc` alias in `.zshrc`
+
+## Updating this repo from your current machine
+
+```sh
+brew bundle dump --file=Brewfile --force
+```
+
+Then copy any changed dotfiles back into the repo and commit.
