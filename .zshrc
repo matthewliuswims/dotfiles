@@ -114,6 +114,10 @@ alias search=grep
 # usage: so basically treat the below command as git.  
 alias git-alias-for-dot-files='/usr/bin/git --git-dir=$HOME/.dotfilesconfigmatthewcreated/ --work-tree=$HOME'
 
+# to add brew to path -- see https://stackoverflow.com/a/65603434
+# must come before pyenv/nvm/etc. since they may be installed via brew
+export PATH=/opt/homebrew/bin:$PATH
+
 # to use pyenv
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
@@ -130,9 +134,6 @@ export NVM_DIR="$HOME/.nvm"
 # this allows you to open vscode using "code ."
 # make sure vscode is actually in the Applications folder
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-
-# to add brew to path -- see https://stackoverflow.com/a/65603434
-export PATH=/opt/homebrew/bin:$PATH
 
 # claude code with --dangerously-skip-permissions and --chrome
 alias cdc='claude --dangerously-skip-permissions --chrome'
