@@ -2,6 +2,15 @@ is the user `settings.json` for vscode . should be able to copy + paste everythi
 ##############
 
 {
-    "editor.formatOnSave": true,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.minimap.enabled": false,
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "editor.accessibilitySupport": "off"
 }

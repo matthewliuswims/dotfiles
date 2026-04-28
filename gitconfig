@@ -1,10 +1,18 @@
-# [user] and [filter "lfs"] were redacted
 # save in ~/.gitconfig
 
-################ everything below is for git aliasing ################\
 [alias]
         co = checkout
         br = branch
         ci = commit
         st = status
         rb = rebase
+[user]
+	email = matthew@matthewliu.net
+	name = Matthew
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[pull]
+	rebase = true
