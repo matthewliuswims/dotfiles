@@ -59,5 +59,13 @@ Note ^^ there's a default keyboard short cuts file that is not editable. you wan
   {
     "key": "cmd+k s",
     "command": "-workbench.action.files.saveWithoutFormatting"
+  },
+  // Claude Code /terminal-setup: Shift+Enter sends ESC+CR so Claude Code's
+  // integrated terminal inserts a newline instead of submitting the prompt.
+  {
+    "key": "shift+enter",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": { "text": "\u001b\r" },
+    "when": "terminalFocus"
   }
 ]
