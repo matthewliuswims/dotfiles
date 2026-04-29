@@ -12,5 +12,7 @@ is the user `settings.json` for vscode . should be able to copy + paste everythi
   },
   "editor.minimap.enabled": false,
   "github.copilot.nextEditSuggestions.enabled": true,
-  "editor.accessibilitySupport": "off"
+  "editor.accessibilitySupport": "off",
+  // Claude Code /terminal-setup
+  "terminal.integrated.mouseWheelScrollSensitivity": 3
 }
