@@ -46,6 +46,7 @@ cp "keybindings.json (vscode)" "$HOME/Library/Application Support/Code/User/keyb
 - **poetry** — `.zshrc` adds `~/.poetry/bin` to PATH; install if you use it
 - **miniconda** — https://docs.anaconda.com/miniconda/install/ then `conda init zsh`. Machine-specific, intentionally not in this repo.
 - **Claude Code** — required for the `cdc` alias in `.zshrc`. The `.zshrc` adds `~/.local/bin` to PATH, which assumes the curl installer (`curl -fsSL claude.ai/install.sh | bash`).
+- **MacTeX (no-GUI)** — heavy (~5GB), install only if you need LaTeX: `brew bundle --file=./Brewfile.optional`
 
 ## Updating this repo from your current machine
 
