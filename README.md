@@ -45,7 +45,7 @@ cp "keybindings.json (vscode)" "$HOME/Library/Application Support/Code/User/keyb
 - **nvm** — https://github.com/nvm-sh/nvm (`.zshrc` load lines are guarded, safe to skip)
 - **poetry** — `.zshrc` adds `~/.poetry/bin` to PATH; install if you use it
 - **miniconda** — https://docs.anaconda.com/miniconda/install/ then `conda init zsh`. Machine-specific, intentionally not in this repo.
-- **Claude Code** — required for the `cdc` alias in `.zshrc`
+- **Claude Code** — required for the `cdc` alias in `.zshrc`. The `.zshrc` adds `~/.local/bin` to PATH, which assumes the curl installer (`curl -fsSL claude.ai/install.sh | bash`).
 
 ## Updating this repo from your current machine
 
